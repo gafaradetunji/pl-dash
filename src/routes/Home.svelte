@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Premier League Dashboard</title>
+  <title>Premier League Analysis</title>
   <meta name="description" content="Premier League Statistics Dashboard" />
 </svelte:head>
 
@@ -11,7 +11,7 @@
   <div id="home">
     <div class="content">
       <div id="circle" />
-      <img src="img/pldashboard5.png" alt="pldashboard" />
+      <!-- <img src="img/pldashboard5.png" alt="pldashboard" /> -->
       <div class="links">
         <a class="dashboard-link" href="/">Dashboard</a>
         <a class="fantasy-link" href="/fantasy">Fantasy</a>
@@ -62,7 +62,8 @@
     background: linear-gradient(70deg, var(--green), #02efff, #5e80ff);
     background: linear-gradient(90deg, #00fbd6, #02efff);
     background: var(--green);
-    box-shadow: 0 0 30px 1px rgba(0, 254, 135, 0.2),
+    box-shadow:
+      0 0 30px 1px rgba(0, 254, 135, 0.2),
       0 0 60px 2px rgba(0, 254, 135, 0.2);
     padding: 18px 0;
   }
@@ -75,7 +76,8 @@
     background: #fc014e;
     background: linear-gradient(90deg, var(--green), #00fbd6);
     background: rgb(5, 235, 235);
-    box-shadow: 0 0 30px 1px rgba(5, 235, 235, 0.2),
+    box-shadow:
+      0 0 30px 1px rgba(5, 235, 235, 0.2),
       0 0 60px 2px rgba(5, 235, 235, 0.2);
     padding: 18px 0;
   }

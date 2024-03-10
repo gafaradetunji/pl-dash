@@ -4,7 +4,7 @@
   import FantasyNav from '../components/nav/FantasyNav.svelte';
   import FantasyMobileNav from '../components/nav/FantasyMobileNav.svelte';
   import PointsVsPrice from '../components/fantasy/PointsVsPrice.svelte';
-  import Footer from '../components/Footer.svelte';
+  // import Footer from '../components/Footer.svelte';
   import Table from '../components/fantasy/Table.svelte';
   import { url } from '../lib/consts';
   import type { FantasyData, Page } from '../lib/fantasy.types';
@@ -100,11 +100,7 @@
 <Router>
   <div id="team">
     <FantasyNav currentPage={page} {pages} {switchPage} />
-    <FantasyMobileNav
-      {pages}
-      {switchPage}
-      {toggleMobileNav}
-    />
+    <FantasyMobileNav {pages} {switchPage} {toggleMobileNav} />
     {#if pages.length === 0}
       <!-- Navigation disabled while teams list are loading -->
       <button id="mobileNavBtn" style="cursor: default">Menu</button>
@@ -121,7 +117,7 @@
         <div class="table">
           <Table data={pageData} {page} {mobileView} />
         </div>
-        <Footer lastUpdated={null} />
+        <!-- <Footer lastUpdated={null} /> -->
       {:else}
         <div class="loading-spinner-container">
           <div class="loading-spinner" />

@@ -5,7 +5,7 @@
   import TableSnippet from '../components/team/TableSnippet.svelte';
   import NextGame from '../components/team/NextGame.svelte';
   import StatsValues from '../components/team/goals_scored_and_conceded/StatsValues.svelte';
-  import Footer from '../components/Footer.svelte';
+  // import Footer from '../components/Footer.svelte';
   import FixturesGraph from '../components/team/FixturesGraph.svelte';
   import FormOverTimeGraph from '../components/team/FormOverTimeGraph.svelte';
   import PositionOverTimeGraph from '../components/team/PositionOverTimeGraph.svelte';
@@ -227,20 +227,23 @@
                       cy="170"
                       r="140"
                       stroke-width="0"
-                      fill="var(--{slug})"
+                      fill="black"
                     />
                     <circle
                       cx="300"
                       cy="320"
                       r="170"
                       stroke-width="0"
-                      fill="var(--{slug})"
+                      fill="black"
                     />
                   </svg>
                 </div>
                 <div>
                   <h1>Team Position</h1>
-                  <div class="position-central">
+                  <div
+                    class="position-central"
+                    style={`color: var(--${slug});`}
+                  >
                     {data.standings[team][data._id].position}
                   </div>
                 </div>
@@ -367,7 +370,7 @@
             {/if}
           </div>
         {/if}
-        <Footer lastUpdated={data.lastUpdated} />
+        <!-- <Footer lastUpdated={data.lastUpdated} /> -->
       {:else}
         <div class="loading-spinner-container">
           <div class="loading-spinner" />

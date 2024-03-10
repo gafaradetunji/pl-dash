@@ -22,7 +22,7 @@
 <nav id="navBar">
   <div class="title no-selection">
     <a href="/home">
-      <span style="color: var(--green)">pl</span>dashboard
+      <span style="color: var(--green)">Premier League</span>Analysis
     </a>
   </div>
   <div class="team-links">

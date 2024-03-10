@@ -13,7 +13,7 @@
 <nav id="navBar">
   <div class="title no-selection">
     <p>
-      <span style="color: var(--green)">pl</span>dashboard
+      <span style="color: var(--green)">pl</span>Analysis
     </p>
     <div class="fantasy-logo">Fantasy</div>
   </div>

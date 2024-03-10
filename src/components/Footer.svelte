@@ -17,7 +17,7 @@
       </div>
     {/if}
     <a href="https://pldashboard.com/home" class="version no-select"
-      ><span class="pl">pl</span>dashboard</a
+      ><span class="pl">Epl</span>Analysis</a
     >
   </div>
 </div>
